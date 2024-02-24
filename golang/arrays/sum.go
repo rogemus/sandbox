@@ -1,7 +1,8 @@
 package arrays
 
 func Sum(numbers []int) int {
-	sum := 0
+
+  sum := 0
 
 	for _, number := range numbers {
 		sum += number
@@ -18,7 +19,16 @@ func SumAll(numbersToSum ...[]int) []int {
 	return sums
 }
 
-
 func SumAllTails(numbersToSum ...[]int) []int {
-  return nil
+	var sums []int
+	for _, numbers := range numbersToSum {
+		if len(numbers) == 0 {
+			sums = append(sums, 0)
+		} else {
+			tail := numbers[1:]
+			sums = append(sums, Sum(tail))
+		}
+
+	}
+	return sums
 }
