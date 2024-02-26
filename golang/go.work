@@ -1,5 +1,6 @@
 go 1.22.0
 
+use ./concurrency
 use ./mocking
 use ./di
 use ./arrays
