@@ -1,5 +1,7 @@
 go 1.22.0
 
+use ./mocking
+use ./di
 use ./arrays
 use ./maps_dict
 use ./pointers
