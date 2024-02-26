@@ -1,3 +1,5 @@
 go 1.22.0
 
+use ./arrays
+use ./maps_dict
 use ./pointers
