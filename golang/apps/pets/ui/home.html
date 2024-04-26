@@ -1,0 +1,14 @@
+{{ define "content" }}
+<ul>
+  {{ range . }}
+  <li>
+    <ul>
+      <li><strong>Name</strong>: <code>{{ .Name }}</code></li>
+      <li><strong>Sex</strong>: <code>{{ .Sex }}</code></li>
+      <li><strong>Age</strong>: <code>{{ .Age }}</code></li>
+      <li><strong>Breed</strong>: <code>{{ .Breed }}</code></li>
+    </ul>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
